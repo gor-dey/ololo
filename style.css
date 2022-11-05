@@ -1,0 +1,39 @@
+body {
+    font-family: Arial
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.navigation__button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services__buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.services__button:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.services__title {
+    display: flex;
+    gap: 12px;
+}

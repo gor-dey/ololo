@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS-company website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <header>
     <nav class="navigation">
-        <div class="navigation__button navigation__mobile">
+        <div class="navigation__mobile">
             <button class="navigation__button navigation__menu"><img src="img\header\nav__menu.svg" alt="menu"></button>
             <button class="navigation__button navigation__logo"><img src="img\header\nav__logo.svg" alt="logo"></button>
             <button class="navigation__button navigation__repair"><img src="img\header\nav__repair.svg" alt="repair"></button>
@@ -33,17 +34,18 @@
 
 <body>
     <div class="services">
-        <div class="services__tittle">
+        <div class="services__title">
             <img src="img\highlight.svg">
             <h1>Услуги и сервисы</h1>
         </div>
-        <button class="services__button services__search-box">Ремонтируемые устройства</button>
-        <button class="services__button services__additional">Дополнительные услуги</button>
-        <button class="services__button services__prices">Цены на услуги</button>
-        <button class="services__button services__adresses">Адреса сервисных центров </button>
-        <button class="services__button services__special-prices">Специальные цены</button>
-        <button class="services__button services__search-box">Отзывы</button>
-
+        <div class="services__buttons">
+            <div><button class="services__button services__search-box">Ремонтируемые устройства</button></div>
+            <div><button class="services__button services__additional">Дополнительные услуги</button></div>
+            <div><button class="services__button services__prices">Цены на услуги</button></div>
+            <div><button class="services__button services__adresses">Адреса сервисных центров </button></div>
+            <div><button class="services__button services__special-prices">Специальные цены</button></div>
+            <div><button class="services__button services__reviews">Отзывы</button></div>
+        </div>
 
     <main class="main">
         <p class="main_text">
