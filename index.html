@@ -10,35 +10,22 @@
 
 <header>
     <nav class="navigation">
-        <div class="mobile">
-            <div class="navigation__menu">
-                <img src="picks\header\burger.svg" alt="qw">
-            </div>
-            <div class="navigation__logo">
-                <img src="picks\header\logo.svg" alt="qw">
-            </div>
-            <div class="navigation__repair">
-                <img src="picks\header\repair.svg" alt="qw">
-            </div>
-            <div class="navigation__check-the-status">
-                <img src="picks\header\checkstatus.svg" alt="qw">
-            </div>
-        </div>
+        <div class="navigation__button navigation__mobile">
+            <button class="navigation__button navigation__menu"><img src="img\header\nav__menu.svg" alt="menu"></button>
+            <button class="navigation__button navigation__logo"><img src="img\header\nav__logo.svg" alt="logo"></button>
+            <button class="navigation__button navigation__repair"><img src="img\header\nav__repair.svg" alt="repair"></button>
+            <button class="navigation__button navigation__check-the-status"><img src="img\header\nav__check-the-status.svg" alt="status"></button>
         
         <div class="navigation__tablet">
-            <div class="navigation__call">
-                <img src="picks\header\call.svg" alt="qw">
-            </div>
-            <div class="navigation__chat">
-                <img src="picks\header\chat.svg" alt="qw">
-            </div>
+            <button class="navigation__button navigation__call"><img src="img\header\nav__call.svg" alt="call"></button>
+            <button class="navigation__button navigation__chat"><img src="img\header\nav__chat.svg" alt="chat"></button>
         </div>
 
-        <div class="desctop">
-            <cpan class="navigation_repair-text">
+        <div class="navigation__desktop">
+            <span class="navigation__button navigation__repair-text">
                 Оставить заявку
             </span>
-            <span class="navigation_check-the-status-text">
+            <span class="navigation__button navigation__check-the-status-text">
                 Статус ремонта
             </span>
     </nav>
@@ -47,37 +34,15 @@
 <body>
     <div class="services">
         <div class="services__tittle">
+            <img src="img\highlight.svg">
             <h1>Услуги и сервисы</h1>
         </div>
-        <div class="services__search-box"> 
-            <input name="services__search-box" placeholder="Ремонтируемые устройства">
-        </div>
-        <div class="services__addictional">
-            <p>
-                Дополнительные услуги
-            </p>
-        </div>
-        <div class="services__prices">
-            <p>
-                Цены на услуги
-            </p>
-        </div>
-        <div class="services__adresses">
-            <p>
-                Адреса сервисных центров
-            </p>
-        </div>
-        <div class="services__special-prices">
-            <p>
-                Специальные цены
-            </p>
-        </div>
-        <div class="services__reviews">
-            <p>
-                Отзывы
-            </p>
-        </div>
-    </div>
+        <button class="services__button services__search-box">Ремонтируемые устройства</button>
+        <button class="services__button services__additional">Дополнительные услуги</button>
+        <button class="services__button services__prices">Цены на услуги</button>
+        <button class="services__button services__adresses">Адреса сервисных центров </button>
+        <button class="services__button services__special-prices">Специальные цены</button>
+        <button class="services__button services__search-box">Отзывы</button>
 
 
     <main class="main">
@@ -88,13 +53,13 @@
         </p>
         <div class="read-more">
             <label class="read-more">
-                <a href=""><img src="picks\icon.svg">
+                <a href=""><img src="img\main__read-more.svg">
                 Читать далее
                 </a>
             </label>    
         </div>
-        <div class="main-picture">
-            <img src="picks\picture.png" alt="main pick">
+        <div class="main__picture">
+            <img src="img\picture.png" alt="main pic">
         </div>
     </main>
 </body>
