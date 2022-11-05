@@ -1,17 +1,28 @@
 @font-face {
     font-family: "TT Lakes";
-    src:    url("/fonts/TTLakes-Regular.woff") format("woff"),
-            url("/fonts/TTLakes-Medium.woff") format("woff"),
-            url("/fonts/TTLakes-Bolt.woff") format("woff"),
-
-            url("/fonts/TTLakes-Regular.ttf") format("ttf"),
-            url("/fonts/TTLakes-Medium.ttf") format("ttf"),
-            url("/fonts/TTLakes-Bolt.ttf") format("ttf"),
-
+    src:    url("/fonts/TTLakes-Regular.ttf") format("ttf"),
             url("/fonts/TTLakes-Regular.eot") format("eot"),
+            url("/fonts/TTLakes-Regular.woff") format("woff");
+            font-weight: 400;
+}
+   
+@font-face {
+   font-family: "TT Lakes";
+    src:
+            url("/fonts/TTLakes-Medium.ttf") format("ttf"),
             url("/fonts/TTLakes-Medium.eot") format("eot"),
-            url("/fonts/TTLakes-Bolt.eot") format("eot");
-   }
+            url("/fonts/TTLakes-Medium.woff") format("woff");
+            font-weight: 500;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+        src:
+            url("/fonts/TTLakes-Bold.ttf") format("ttf"),
+            url("/fonts/TTLakes-Bold.eot") format("eot"),
+            url("/fonts/TTLakes-Bold.woff") format("woff");
+            font-weight: 700;
+}
 
 body {
     font-family: TT Lakes;
@@ -21,12 +32,39 @@ h1 {
     font-size: 28px;
 }
 
+.navigation {
+    display: flex;
+}
+
 .navigation__button {
     background: none;
     border: none;
     margin: 0;
     padding: 0;
 }
+
+.navigation__mobile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.navigation__tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    display: none;
+    
+}
+
+.navigation__desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    display: none;
+}
+
+
 
 .services__buttons {
     display: flex;
