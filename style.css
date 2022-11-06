@@ -27,6 +27,9 @@
 body {
     font-family: TT Lakes;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1fr;
     
 }
 
@@ -67,6 +70,7 @@ h1 {
 
 .services__buttons {
     display: flex;
+    align-items: stretch;
     flex-wrap: nowrap;
     gap: 30px;
     weight: 100%
@@ -93,7 +97,44 @@ h1 {
     gap: 12px;
 }
 
+.main__button-read-more {
+    background: none;
+    border: none;
+    padding:10 px
+}
 
+.main__button-read-els-some-more {
+    margin-top: -30px;
+}
+
+.main__text__hidden {
+        visibility: hidden;
+}
+
+.main__button-read-more {
+    visibility: hidden;
+}
+
+.main__button-read-more:checked ~ .main__text__hidden {
+    visibility: inherit;
+}
+
+.main__button-read-more:checked ~ .main__button-read-els-some-more {
+    display: none;
+}
+
+.main__button-read-more:checked ~ .main__button-read-more {
+    display: none;
+}
+
+.main__text__hidden {
+    margin-top: -30px;
+}
+
+.main__picture {
+    width: 100%;
+    object-fit: cover;
+}
 
 @media (min-width: 321px) {
 
@@ -122,9 +163,15 @@ h1 {
     .navigation__chat {
         padding-right: 20px;
     }  
+
+    .main {
+        display: flex;
+    }
+
+    .main__picture {
+        height: auto;
+    }
 }
-
-
 
 @media (min-width: 769px) {
     .navigation__mobile {
@@ -147,6 +194,7 @@ h1 {
         display: flex;
         justify-content: center;
         margin-left: auto;
+        margin-right: 30px;
         align-items: center;
         margin-top: 30px;
     }
