@@ -24,21 +24,32 @@
             font-weight: 700;
 }
 
+.navigation__logo-around-tab1-2, .navigation__logo-around-tab1-1 {
+    height: 32px;
+    width: 2px;
+    align-self: center;
+}
+
+.header {
+    background-color: white;
+}
+
 body {
     font-family: TT Lakes;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     width: 1fr;
-    
+    min-width: 320px;
+    background-color: #F8F8F8;
 }
 
-h1 {
-    font-size: 28px;
-}
+
 
 .navigation {
     display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navigation__button {
@@ -51,8 +62,9 @@ h1 {
 .navigation__mobile {
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;    ;
     width: 100%;
+    
 }
 
 .navigation__tablet-start {
@@ -70,18 +82,21 @@ h1 {
 
 .services__buttons {
     display: flex;
+    overflow: scroll;
     align-items: stretch;
     flex-wrap: nowrap;
-    gap: 30px;
-    weight: 100%
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .services__button {
     flex-shrink: 0;
     background: none;
-    border: none;
+    border: 2px solid #F8F8F8;;
+    border-radius: 6px;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: auto;
     height: 40px;
     font-size: 16px;
@@ -90,25 +105,35 @@ h1 {
 .services__button:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+    background-color: white;
 }
 
 .services__title {
     display: flex;
     gap: 12px;
+    margin-left: 0px;
+}
+
+.main__text {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main__button-read-more {
     background: none;
     border: none;
-    padding:10 px
+    padding: 10 px;
 }
 
 .main__button-read-els-some-more {
     margin-top: -30px;
+    padding-left: 20px;
 }
 
 .main__text__hidden {
         visibility: hidden;
+        padding-left: 10px;
+        padding-right: 10px;
 }
 
 .main__button-read-more {
@@ -133,10 +158,10 @@ h1 {
 
 .main__picture {
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;   
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
 
     .navigation__mobile {
         display: none;
@@ -146,6 +171,7 @@ h1 {
         display: flex;
         justify-content: flex-start;
         gap: 0;
+        margin-left: -20px;
     }
 
     .navigation__tablet-end {
@@ -167,10 +193,14 @@ h1 {
     .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-right: 20px;
     }
+
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1120px) {
+
     .navigation__mobile {
         display: none;
     }
@@ -184,9 +214,9 @@ h1 {
     }
 
     body {
-        max-width: 1120px;
         margin: 0 auto;
     }
+
     .navigation__desktop {
         display: flex;
         justify-content: center;
@@ -197,10 +227,11 @@ h1 {
     }
 
     .services__title {
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .services__buttons {
+        overflow: auto;
         flex-wrap: wrap;
     }
 
