@@ -1,26 +1,26 @@
 @font-face {
     font-family: "TT Lakes";
-    src:    url("/fonts/TTLakes-Regular.ttf") format("ttf"),
-            url("/fonts/TTLakes-Regular.eot") format("eot"),
-            url("/fonts/TTLakes-Regular.woff") format("woff");
+    src:    url("fonts/TTLakes-Regular.ttf") format("ttf"),
+            url("fonts/TTLakes-Regular.eot") format("eot"),
+            url("fonts/TTLakes-Regular.woff") format("woff");
             font-weight: 400;
 }
    
 @font-face {
    font-family: "TT Lakes";
     src:
-            url("/fonts/TTLakes-Medium.ttf") format("ttf"),
-            url("/fonts/TTLakes-Medium.eot") format("eot"),
-            url("/fonts/TTLakes-Medium.woff") format("woff");
+            url("fonts/TTLakes-Medium.ttf") format("ttf"),
+            url("fonts/TTLakes-Medium.eot") format("eot"),
+            url("fonts/TTLakes-Medium.woff") format("woff");
             font-weight: 500;
 }
 
 @font-face {
     font-family: "TT Lakes";
         src:
-            url("/fonts/TTLakes-Bold.ttf") format("ttf"),
-            url("/fonts/TTLakes-Bold.eot") format("eot"),
-            url("/fonts/TTLakes-Bold.woff") format("woff");
+            url("fonts/TTLakes-Bold.ttf") format("ttf"),
+            url("fonts/TTLakes-Bold.eot") format("eot"),
+            url("fonts/TTLakes-Bold.woff") format("woff");
             font-weight: 700;
 }
 
@@ -28,11 +28,6 @@
     height: 32px;
     width: 2px;
     align-self: center;
-}
-
-.header {
-    background-color: white;
-    font-family: TT Lakes;
 }
 
 body {
@@ -45,10 +40,15 @@ body {
     background-color: #F8F8F8;
 }
 
-
+header {
+    background-color: white;
+    font-family: TT Lakes;
+    height: 87px;
+}
 
 .navigation {
     display: flex;
+
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -58,14 +58,15 @@ body {
     border: none;
     margin: 0;
     padding: 0;
+
 }
 
 .navigation__mobile {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;    ;
     width: 100%;
-    
+    padding-top: 16px;
 }
 
 .navigation__tablet-start {
@@ -101,6 +102,7 @@ body {
     width: auto;
     height: 40px;
     font-size: 16px;
+    color: #7E7E82;
 }
 
 .services__button:hover {
@@ -129,10 +131,11 @@ body {
 .main__button-read-els-some-more {
     margin-top: -30px;
     padding-left: 20px;
+    font-weight: 500;
 }
 
 .main__text__hidden {
-        visibility: hidden;
+        display: none;
         padding-left: 10px;
         padding-right: 10px;
 }
@@ -142,7 +145,7 @@ body {
 }
 
 .main__button-read-more:checked ~ .main__text__hidden {
-    visibility: inherit;
+    display: inline-block;
 }
 
 .main__button-read-more:checked ~ .main__button-read-els-some-more {
@@ -173,6 +176,7 @@ body {
         justify-content: flex-start;
         gap: 0;
         margin-left: -20px;
+        padding-top: 16px;
     }
 
     .navigation__tablet-end {
@@ -180,6 +184,7 @@ body {
         justify-content: center;
         margin-left: auto;
         gap: 0;
+        padding-top: 16px;
     }
 
     .navigation__button {
@@ -221,6 +226,7 @@ body {
 
     body {
         margin: 0 auto;
+        max-width: 1120px
     }
 
     .navigation__desktop {
