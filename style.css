@@ -165,11 +165,8 @@ h1 {
     }  
 
     .main {
-        display: flex;
-    }
-
-    .main__picture {
-        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
