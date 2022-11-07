@@ -224,6 +224,10 @@ header {
         display: none;
     }
 
+    header {
+        background-color: #F8F8F8;
+    }
+
     body {
         margin: 0 auto;
         max-width: 1120px
