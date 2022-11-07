@@ -191,6 +191,10 @@ body {
         padding-right: 20px;
     }  
 
+    .header {
+        font-family: TT Lakes;
+    }
+
     .main {
         font-family: TT Lakes;
         display: grid;
