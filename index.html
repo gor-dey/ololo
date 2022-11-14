@@ -8,11 +8,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<header>
-    <body>
+<body>
+    <header>
         <nav class="navigation">
             <div class="navigation__mobile">
-                <button class="navigation__button navigation__menu"><img src="img\header\nav__menu.svg" alt="menu"></button>
+              
+
+
+                <label for="navigation__button navigation__menu side-panel__button"><img src="img\header\nav__menu.svg" alt="call"></label>
+                <input id="navigation__button navigation__menu side-panel__button" type="radio" class="navigation__button navigation__menu side-panel__button side-panel__call--radio">
+                
+                <iframe class="side-panel"
+                               style="border: none"
+                               src="layot\index.html" 
+                               width="10rem" 
+                               height="64rem"
+                               lofding="eager"></iframe>
+
                 <button class="navigation__button navigation__logo"><img src="img\header\nav__logo.svg" alt="logo"></button>
                 <img class="navigation__logo-around" src="logo-around.svg">
                 <button class="navigation__button navigation__repair"><img src="img\header\nav__repair.svg" alt="repair"></button>
@@ -43,7 +55,6 @@
         </nav>
     </header>
 
-
         <div class="services">
             <div class="services__title">
                 <img src="img\service-left.svg">
@@ -73,6 +84,8 @@
             <img class="main__picture" src="img\picture.png" alt="main pic">
             
         </main>
+
+        
 
 </body>
 

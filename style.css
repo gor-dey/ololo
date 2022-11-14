@@ -256,3 +256,22 @@ header {
     }
 
 }
+
+
+
+.side-panel {
+    box-shadow: 2rem 0 2rem #F2F2F2;
+    visibility: hidden;
+    position: absolute;
+    top: 64rem;
+    width: 18rem;
+    height: 61rem;
+}
+
+.side-panel__call--radio {display: none;}
+
+.side-panel__call--radio:checked ~ .side-panel {
+    visibility: visible;
+    transition: all 1s ease 0s;
+    transform: translateY(-65rem);   
+}
