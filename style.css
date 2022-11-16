@@ -267,6 +267,7 @@ header {
     box-shadow: 2rem 0 2rem #F2F2F2;
     visibility: hidden;
     position: absolute;
+    left: 0;
     top: 64rem;
     width: 18rem;
     height: 61rem;
