@@ -179,6 +179,10 @@ header {
         padding-top: 16px;
     }
 
+    .navigation__button-tab1 {
+        margin-left: 1rem;
+    }
+
     .navigation__tablet-end {
         display: flex;
         justify-content: center;
@@ -271,6 +275,24 @@ header {
 .side-panel__call--radio {display: none;}
 
 .side-panel__call--radio:checked ~ .side-panel {
+    visibility: visible;
+    transition: all 1s ease 0s;
+    transform: translateY(-65rem);   
+}
+
+
+.side-panel-tab1 {
+    box-shadow: 2rem 0 2rem #F2F2F2;
+    visibility: hidden;
+    position: absolute;
+    top: 64rem;
+    width: 18rem;
+    height: 61rem;
+}
+
+.side-panel__call--radio-tab1 {display: none;}
+
+.side-panel__call--radio-tab1:checked ~ .side-panel-tab1 {
     visibility: visible;
     transition: all 1s ease 0s;
     transform: translateY(-65rem);   
