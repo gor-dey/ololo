@@ -269,7 +269,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    top: 64rem;
+    top: -64rem;
     width: 20rem;
     height: 61rem;
 }
@@ -279,7 +279,7 @@ header {
 .side-panel__call--radio:checked ~ .side-panel {
     visibility: visible;
     transition: all 1s ease 0s;
-    transform: translateY(-65rem);   
+    transform: translateY(64rem);   
 }
 
 
@@ -289,7 +289,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    top: 64rem;
+    top: -64rem;
     width: 20rem;
     height: 61rem;
 }
@@ -299,5 +299,5 @@ header {
 .side-panel__call--radio-tab1:checked ~ .side-panel-tab1 {
     visibility: visible;
     transition: all 1s ease 0s;
-    transform: translateY(-65rem);   
+    transform: translateY(64rem);   
 }
