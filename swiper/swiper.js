@@ -5,9 +5,10 @@ new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
 
-    }
+    },
 
-    slidesPerView: 2;
+    slidesPerView: 1.2,
 
-})
+    spaceBetween: 16,
+}) 
 
